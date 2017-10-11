@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Star Wars RPG</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Styles.css file -->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Nosifer" rel="stylesheet">
+
+</head>
+<body>
+	<header> Star Wars RPG </header>
+
+	<div class = "container" id ="main-section">
+
+<!-- character selection area -->
+	<div class="container col-lg-12" id="character-section">
+		<div class="character-select"> Choose your Character</div>
+	</div>
+	
+	<!-- section for user characters -->
+	<div class="container col-lg-4" id="user-character-section">
+		<div class="section-title"></div>
+		<div id="user-character"></div>
+	</div>
+
+
+	<div class="section-title container col-lg-4"> Battle!
+		<div id="battle-area">
+			<button class="btn" id="attack-button" onclick="attack()">Attack</button>
+			<button class="btn" id="restart-button" hidden="true" onclick="restart()">Restart Game</button>
+			<div id="game-message"></div>
+		</div>
+	</div>
+
+<!--section for defenders -->
+	<div id="action">
+		<div class="character-section">
+			<div class="container section-title col-lg-4">
+				<div id="defender"></div>
+			</div>
+		</div>
+	</div>
+
+	<!--section for opponent character -->
+	<div class="container" id="opponent-section">
+		<div class="section-title"></div>
+	</div>
+
+	<h3>Opponents Health <span id="opponent-health"></span></h3>
+	<h3>Your Health <span id="player-health"> </span></h3>
+
+	<script src="assets/javascript/game.js"></script>
+
+
+
+
+</body>
+</html>
